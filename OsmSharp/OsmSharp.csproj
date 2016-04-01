@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D012B6E6-9F78-40FD-8A33-6A2A35DF2A8C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OsmSharp</RootNamespace>
+    <AssemblyName>OsmSharp</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile147</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\Output\OsmSharp.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\Output\OsmSharp.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="API\Bounds.cs" />
+    <Compile Include="API\Capabilities.cs" />
+    <Compile Include="API\Osm.cs" />
+    <Compile Include="API\User.cs" />
+    <Compile Include="Changesets\Changeset.cs" />
+    <Compile Include="Changesets\DiffResult.cs" />
+    <Compile Include="Changesets\OsmChange.cs" />
+    <Compile Include="Complete\CompleteOsmGeo.cs" />
+    <Compile Include="Complete\CompleteRelation.cs" />
+    <Compile Include="Complete\CompleteWay.cs" />
+    <Compile Include="Complete\Extensions.cs" />
+    <Compile Include="Complete\ICompleteOsmGeo.cs" />
+    <Compile Include="Complete\Node.Complete.cs" />
+    <Compile Include="Db\DbException.cs" />
+    <Compile Include="Db\DiffResultResult.cs" />
+    <Compile Include="Db\HistoryDb.cs" />
+    <Compile Include="Db\IHistoryDb.cs" />
+    <Compile Include="Db\IHistoryDbExtensions.cs" />
+    <Compile Include="Db\Impl\Extensions.cs" />
+    <Compile Include="Db\Impl\IHistoryDbImpl.cs" />
+    <Compile Include="Db\Impl\ISnapshotDbImpl.cs" />
+    <Compile Include="Db\OsmGeoKey.cs" />
+    <Compile Include="Db\IOsmGeoSource.cs" />
+    <Compile Include="Db\IOsmGeoSourceExtensions.cs" />
+    <Compile Include="Db\ISnapshotDb.cs" />
+    <Compile Include="Db\ISnapshotDbExtensions.cs" />
+    <Compile Include="Db\Impl\MemoryHistoryDb.cs" />
+    <Compile Include="Db\Impl\MemorySnapshotDb.cs" />
+    <Compile Include="Db\OsmGeoVersionKey.cs" />
+    <Compile Include="Db\SnapshotDb.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="IO\PBF\Encoder.cs" />
+    <Compile Include="IO\PBF\fileformat.cs" />
+    <Compile Include="IO\PBF\IPBFOsmPrimitiveConsumer.cs" />
+    <Compile Include="IO\PBF\osmformat.cs" />
+    <Compile Include="IO\PBF\PBFExtensions.cs" />
+    <Compile Include="IO\PBF\PBFReader.cs" />
+    <Compile Include="IO\PBF\PBFWriter.cs" />
+    <Compile Include="IO\Xml\API\Bounds.Xml.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Streams\Exceptions\StreamNotSortedException.cs" />
+    <Compile Include="Streams\Filters\OsmStreamFilter.cs" />
+    <Compile Include="Streams\Filters\OsmStreamFilterDelegate.cs" />
+    <Compile Include="Streams\Filters\OsmStreamFilterMerge.cs" />
+    <Compile Include="Streams\Filters\OsmStreamFilterProgress.cs" />
+    <Compile Include="Streams\OsmStreamExtensions.cs" />
+    <Compile Include="Streams\PBFOsmStreamSource.cs" />
+    <Compile Include="Streams\PBFOsmStreamTarget.cs" />
+    <Compile Include="IO\Xml\API\Capabilities.Xml.cs" />
+    <Compile Include="IO\Xml\API\Osm.Xml.cs" />
+    <Compile Include="IO\Xml\Changesets\Changeset.Xml.cs" />
+    <Compile Include="IO\Xml\Changesets\DiffResult.Xml.cs" />
+    <Compile Include="IO\Xml\Changesets\OsmChange.Xml.cs" />
+    <Compile Include="IO\Xml\Node.Xml.cs" />
+    <Compile Include="IO\Xml\Relation.Xml.cs" />
+    <Compile Include="IO\Xml\Way.Xml.cs" />
+    <Compile Include="IO\Xml\XmlExtensions.cs" />
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Logging\TraceEventType.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="OsmGeo.cs" />
+    <Compile Include="OsmGeoType.cs" />
+    <Compile Include="Relation.cs" />
+    <Compile Include="Streams\Complete\OsmCompleteEnumerableStreamSource.cs" />
+    <Compile Include="Streams\Complete\OsmCompleteStreamSource.cs" />
+    <Compile Include="Streams\Complete\OsmToCompleteStreamSource.cs" />
+    <Compile Include="Streams\OsmEnumerableStreamSource.cs" />
+    <Compile Include="Streams\OsmStreamSource.cs" />
+    <Compile Include="Streams\OsmStreamSourceEmpty.cs" />
+    <Compile Include="Streams\OsmStreamTarget.cs" />
+    <Compile Include="Streams\OsmStreamTargetEmpty.cs" />
+    <Compile Include="Streams\XmlOsmStreamSource.cs" />
+    <Compile Include="Streams\XmlOsmStreamTarget.cs" />
+    <Compile Include="Tags\Tag.cs" />
+    <Compile Include="Tags\TagExtensions.cs" />
+    <Compile Include="Tags\TagsCollection.cs" />
+    <Compile Include="Tags\TagsCollectionBase.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Way.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IO\PBF\fileformat.proto" />
+    <None Include="IO\PBF\osmformat.proto" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <HintPath>..\packages\protobuf-net.2.0.0.668\lib\portable-sl4+net40+wp7+windows8\protobuf-net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Zlib.Portable, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zlib.Portable.1.11.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
