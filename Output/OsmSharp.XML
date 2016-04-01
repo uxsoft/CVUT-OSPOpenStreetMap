@@ -1,0 +1,3779 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OsmSharp</name>
+    </assembly>
+    <members>
+        <member name="T:OsmSharp.API.Bounds">
+            <summary>
+            Represents bounds.
+            </summary>
+            <summary>
+            Represents the API capabilities.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Bounds.MinLatitude">
+            <summary>
+            Gets or sets the minimum latitude.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Bounds.MinLongitude">
+            <summary>
+            Gets or sets the minimum longitude.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Bounds.MaxLatitude">
+            <summary>
+            Gets or sets the maximum latitude.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Bounds.MaxLongitude">
+            <summary>
+            Gets or sets the maximum longitude.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.API.Capabilities">
+            <summary>
+            Represents the API capabilities.
+            </summary>
+            <summary>
+            Represents the API capabilities.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Capabilities.Version">
+            <summary>
+            Gets or sets the version.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Capabilities.Area">
+            <summary>
+            Gets or sets the area.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Capabilities.Tracepoints">
+            <summary>
+            Gets or sets the tracepoints.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Capabilities.WayNodes">
+            <summary>
+            Gets or sets the way nodes.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Capabilities.Changesets">
+            <summary>
+            Gets or sets the changesets.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Capabilities.Timeout">
+            <summary>
+            Gets or sets the timeout.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Capabilities.Status">
+            <summary>
+            Gets or sets the status.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.API.Version">
+            <summary>
+            Represents the API-version capabilities.
+            </summary>
+            <summary>
+            Represents the API-version capabilities.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Version.Minimum">
+            <summary>
+            Gets or sets the minimum version.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Version.Maximum">
+            <summary>
+            Gets or sets the maximum version.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.API.Area">
+            <summary>
+            Represents the API-area capability.
+            </summary>
+            <summary>
+            Represents the API-area capability.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Area.Maximum">
+            <summary>
+            Gets or sets the maxium.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.API.Tracepoints">
+            <summary>
+            Represents the API-tracepoints capability.
+            </summary>
+            <summary>
+            Represents the API-tracepoints capability.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Tracepoints.PerPage">
+            <summary>
+            Gets or sets the per page setting.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.API.WayNodes">
+            <summary>
+            Represents the API-waynodes capability.
+            </summary>
+            <summary>
+            Represents the API-waynodes capability.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.WayNodes.Maximum">
+            <summary>
+            Gets or sets the maximum.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.API.Changesets">
+            <summary>
+            Represents the API-changesets capabilitiy.
+            </summary>
+            <summary>
+            Represents the API-changesets capabilitiy.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Changesets.MaximumElements">
+            <summary>
+            Gets or sets the maximum element count.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.API.Timeout">
+            <summary>
+            Represents the API-timeout capability.
+            </summary>
+            <summary>
+            Represents the API-timeout capability.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Timeout.Seconds">
+            <summary>
+            Gets or sets the # of seconds.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.API.Status">
+            <summary>
+            Represents the API-status.
+            </summary>
+            <summary>
+            Represents the API-status.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Status.Database">
+            <summary>
+            Gets or sets the database status.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Status.Api">
+            <summary>
+            Gets or sets the api status.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Status.Gpx">
+            <summary>
+            Gets or sets the gpx status.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.API.Osm">
+            <summary>
+            Represents the root-object for all API-related communication.
+            </summary>
+            <summary>
+            Represents the OSM base object.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Osm.Generator">
+            <summary>
+            Gets or sets the generator.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Osm.Version">
+            <summary>
+            Gets or sets the version #.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Osm.Api">
+            <summary>
+            Gets or sets the capabilities.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Osm.Nodes">
+            <summary>
+            Gets or sets the nodes array.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Osm.Ways">
+            <summary>
+            Gets or sets the ways array.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Osm.Relations">
+            <summary>
+            Gets or sets the relations array.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Osm.Changesets">
+            <summary>
+            Gets or sets the changeset.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Osm.Users">
+            <summary>
+            Gets or sets the users.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Osm.User">
+            <summary>
+            Gets or sets the user.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Osm.Bounds">
+            <summary>
+            Gets or sets the bounds.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.API.User">
+            <summary>
+            Represents a user.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.User.Id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.User.DisplayName">
+            <summary>
+            Gets or sets the display name.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.User.AccountCreated">
+            <summary>
+            Gets or sets the account created timestamp.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.User.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.User.ContributorTermsAgreed">
+            <summary>
+            Gets or sets the contributor terms agreed flag.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.User.ContributorTermsPublicDomain">
+            <summary>
+            Gets or sets the contributor terms public domain.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.User.Image">
+            <summary>
+            Gets or sets the image.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.User.Roles">
+            <summary>
+            Gets or sets the roles array.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.User.ChangeSetCount">
+            <summary>
+            Gets or sets the changeset count.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.User.TraceCount">
+            <summary>
+            Gets or sets the tracecount.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.User.BlocksReceived">
+            <summary>
+            Gets or sets the blocks recieved.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.User.Home">
+            <summary>
+            Gets or sets the home location.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.API.Home">
+            <summary>
+            Represents a home location.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Home.Latitude">
+            <summary>
+            Gets or sets the latitude.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Home.Longitude">
+            <summary>
+            Gets or sets the longitude.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Home.Zoom">
+            <summary>
+            Gets or sets the zoom.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.API.Block">
+            <summary>
+            Represent a block.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Block.Count">
+            <summary>
+            Gets or sets the count.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.API.Block.Active">
+            <summary>
+            Gets or sets the active count.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.API.Role">
+            <summary>
+            Represents a role.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Changesets.Changeset">
+            <summary>
+            Represents a changeset.
+            </summary>
+            <summary>
+            Represents a changeset.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.Changeset.Id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.Changeset.Tags">
+            <summary>
+            Gets or sets the tags.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.Changeset.UserId">
+            <summary>
+            Gets or sets the userid.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.Changeset.UserName">
+            <summary>
+            Gets or sets the username.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.Changeset.CreatedAt">
+            <summary>
+            Gets or sets the created at timestamp.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.Changeset.ClosedAt">
+            <summary>
+            Gets or sets the closed at timestamp.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.Changeset.Open">
+            <summary>
+            Gets or sets the open flag.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.Changeset.MinLatitude">
+            <summary>
+            Gets or sets the minimum latitude.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.Changeset.MinLongitude">
+            <summary>
+            Gets or sets the minimum longitude.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.Changeset.MaxLatitude">
+            <summary>
+            Gets or sets the maximum latitude.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.Changeset.MaxLongitude">
+            <summary>
+            Gets or sets the maximum longitude.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Changesets.DiffResult">
+            <summary>
+            Represents a diff result after applying a changeset.
+            </summary>
+            <summary>
+            Represents a diff result after applying a changeset.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.DiffResult.Generator">
+            <summary>
+            Gets or sets the generator.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.DiffResult.Version">
+            <summary>
+            Gets or sets the version #.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.DiffResult.Results">
+            <summary>
+            Gets or sets the results array.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Changesets.OsmGeoResult">
+            <summary>
+            An osm-geo result.
+            </summary>
+            <summary>
+            An osmgeo result.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.OsmGeoResult.OldId">
+            <summary>
+            Gets or sets the old id.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.OsmGeoResult.NewId">
+            <summary>
+            Gets or sets the new id.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.OsmGeoResult.NewVersion">
+            <summary>
+            Gets or sets the new version #.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Changesets.OsmGeoResult.CreateModification(OsmSharp.OsmGeo,System.Int32)">
+            <summary>
+            Creates a modification.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Changesets.OsmGeoResult.CreateCreation(OsmSharp.OsmGeo,System.Int64)">
+            <summary>
+            Creates a creation.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Changesets.OsmGeoResult.CreateDeletion(OsmSharp.OsmGeo)">
+            <summary>
+            Creates a deletion
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Changesets.NodeResult">
+            <summary>
+            A node result.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Changesets.WayResult">
+            <summary>
+            A way result.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Changesets.RelationResult">
+            <summary>
+            A relation result.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Changesets.OsmChange">
+            <summary>
+            Represents an OSM change.
+            </summary>
+            <summary>
+            Represents an OSM change.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.OsmChange.Generator">
+            <summary>
+            Gets or sets the generator.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.OsmChange.Version">
+            <summary>
+            Gets or sets the version.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.OsmChange.Create">
+            <summary>
+            Gets or sets the create change array.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.OsmChange.Modify">
+            <summary>
+            Gets or sets the modify change array.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Changesets.OsmChange.Delete">
+            <summary>
+            Gets or sets the delete change array.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Complete.CompleteOsmGeo">
+            <summary>
+            A complete OSM geo object.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteOsmGeo.Id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteOsmGeo.ChangeSetId">
+            <summary>
+            Gets or sets the changeset id.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteOsmGeo.Visible">
+            <summary>
+            Gets or sets the visible flag.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteOsmGeo.TimeStamp">
+            <summary>
+            Gets/Sets the timestamp.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteOsmGeo.Version">
+            <summary>
+            Gets/Sets the version.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteOsmGeo.User">
+            <summary>
+            The user that created this object
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteOsmGeo.UserId">
+            <summary>
+            The user id.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteOsmGeo.Type">
+            <summary>
+            Gets the osm geo type.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteOsmGeo.Tags">
+            <summary>
+            Gets or sets the tags.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Complete.CompleteRelation">
+            <summary>
+            A complete relation.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Complete.CompleteRelation.#ctor">
+            <summary>
+            Creates a new relation.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteRelation.Type">
+            <summary>
+            Returns the relation type.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteRelation.Members">
+            <summary>
+            Gets the relation members.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Complete.CompleteRelation.ToString">
+            <summary>
+            Returns a description of this object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OsmSharp.Complete.CompleteRelationMember">
+            <summary>
+            A complete relation member.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteRelationMember.Member">
+            <summary>
+            The member.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteRelationMember.Role">
+            <summary>
+            The role.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Complete.CompleteWay">
+            <summary>
+            Represents a complete way.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Complete.CompleteWay.#ctor">
+            <summary>
+            Creates a new way.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteWay.Type">
+            <summary>
+            Returns the way type.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.CompleteWay.Nodes">
+            <summary>
+            Gets the ordered list of nodes.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Complete.CompleteWay.ToString">
+            <summary>
+            Returns a description of this object.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Complete.Extensions">
+            <summary>
+            Contains extension methods.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Complete.Extensions.CreateComplete(OsmSharp.OsmGeo,OsmSharp.Db.IOsmGeoSource)">
+            <summary>
+            Creates a complete object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Complete.Extensions.CreateComplete(OsmSharp.Way,OsmSharp.Db.IOsmGeoSource)">
+            <summary>
+            Creates a complete way.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Complete.Extensions.CreateComplete(OsmSharp.Relation,OsmSharp.Db.IOsmGeoSource)">
+            <summary>
+            Creates a complete relation.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Complete.Extensions.IsClosed(OsmSharp.Complete.CompleteWay)">
+            <summary>
+            Returns true if this way is closed.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Complete.ICompleteOsmGeo">
+            <summary>
+            An abstract representation of a complete OsmGeo object.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.ICompleteOsmGeo.ChangeSetId">
+            <summary>
+            Gets or sets the changeset id.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.ICompleteOsmGeo.Visible">
+            <summary>
+            Gets or sets the visible flag.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.ICompleteOsmGeo.Id">
+            <summary>
+            The id of this object.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.ICompleteOsmGeo.Type">
+            <summary>
+            Returns the type of osm data.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Complete.ICompleteOsmGeo.Tags">
+            <summary>
+            Returns the tags dictionary.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Node">
+            <summary>
+            Represents a node.
+            </summary>
+            <summary>
+            Represents a node.
+            </summary>
+            <summary>
+            Represents a node.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Node.#ctor">
+            <summary>
+            Creates a new node.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Node.Latitude">
+            <summary>
+            The latitude.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Node.Longitude">
+            <summary>
+            The longitude.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Node.ToString">
+            <summary>
+            Returns a description of this object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OsmSharp.Db.DbException">
+            <summary>
+            An exception thrown when something bad happens in one of the db-implementations.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.DbException.#ctor(System.String)">
+            <summary>
+            Creates a new db exception.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.DbException.#ctor(System.String,System.Object[])">
+            <summary>
+            Creates a new db exception.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.DiffResultResult">
+            <summary>
+            An expanded diff result result.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.DiffResultResult.#ctor(System.String)">
+            <summary>
+            Creates a new diffresult result as en error.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.DiffResultResult.#ctor(System.String,OsmSharp.Db.DiffResultStatus)">
+            <summary>
+            Creates a new diffresult result as en error.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.DiffResultResult.#ctor(OsmSharp.Changesets.DiffResult,OsmSharp.Db.DiffResultStatus)">
+            <summary>
+            Creates a new diffresult result.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Db.DiffResultResult.Result">
+            <summary>
+            Gets or sets the diff result.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Db.DiffResultResult.Status">
+            <summary>
+            Gets or sets the diff result status.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Db.DiffResultResult.Message">
+            <summary>
+            Gets or sets the message.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.DiffResultStatus">
+            <summary>
+            Status after applying a changeset.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Db.DiffResultStatus.OK">
+            <summary>
+            Changeset was applied correctly.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Db.DiffResultStatus.BestEffortOK">
+            <summary>
+            Changeset was applied using best effort correctly.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Db.DiffResultStatus.Conflict">
+            <summary>
+            Conflict in one of the changes.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Db.DiffResultStatus.TooBig">
+            <summary>
+            Changeset too big.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Db.DiffResultStatus.NotOpen">
+            <summary>
+            Changeset was not open.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Db.DiffResultStatus.UknownError">
+            <summary>
+            Unknown error.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.HistoryDb">
+            <summary>
+            An internal class implementing a snapshot db.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.#ctor(OsmSharp.Db.Impl.IHistoryDbImpl)">
+            <summary>
+            Creates a new history db.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.GetNextId(OsmSharp.OsmGeoType)">
+            <summary>
+            Gets the next id for the given type.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.GetNextChangesetId">
+            <summary>
+            Gets the next changeset id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.Clear">
+            <summary>
+            Clears all data.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.Add(System.Collections.Generic.IEnumerable{OsmSharp.OsmGeo})">
+            <summary>
+            Adds the given objects.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.Add(OsmSharp.Changesets.Changeset,OsmSharp.Changesets.OsmChange)">
+            <summary>
+            Adds the given changeset.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.Get">
+            <summary>
+            Gets all visible objects.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.Get(OsmSharp.OsmGeoType,System.Int64)">
+            <summary>
+            Gets the last visible version of the object of the given type and given id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.Get(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Gets all visible objects for the given keys.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.Get(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoVersionKey})">
+            <summary>
+            Gets all objects for the given keys.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.Get(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Gets all visible objects within the given bounding box.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.OpenChangeset(OsmSharp.Changesets.Changeset)">
+            <summary>
+            Opens a changeset.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.ApplyChangeset(System.Int64,OsmSharp.Changesets.OsmChange)">
+            <summary>
+            Applies a changeset.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.UpdateChangesetInfo(OsmSharp.Changesets.Changeset)">
+            <summary>
+            Updates changeset info.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.CloseChangeset(System.Int64)">
+            <summary>
+            Closes a changeset.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.GetChangeset(System.Int64)">
+            <summary>
+            Gets the changeset with the given id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.HistoryDb.GetChanges(System.Int64)">
+            <summary>
+            Gets the changes for the changeset with the given id.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.IHistoryDb">
+            <summary>
+            Abstract representation of a database to store OSM-data including history. This db can store nodes, ways, relations and changesets.
+            
+            - Multiple version of the same node can exist.
+            - Changes are only possible by:
+               - Applying changesets.
+            - Changeset meta-data can only be updated when changesets are open.
+            - Changesets have to applied in the following order:
+               - 1. Open new changeset, an new id is returned.
+               - 2. Apply changes.
+               - 3. Close the changeset.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDb.Clear">
+            <summary>
+            Clears all data.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDb.Add(System.Collections.Generic.IEnumerable{OsmSharp.OsmGeo})">
+            <summary>
+            Adds osm objects in the db exactly as they are given.
+            </summary>
+            <remarks>
+            - To update use ApplyChanges.
+            - It's not possible to add multiple objects of a given type with the same id/version# pair.
+            </remarks>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDb.Add(OsmSharp.Changesets.Changeset,OsmSharp.Changesets.OsmChange)">
+            <summary>
+            Adds the given changeset in the db exactly as given.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDb.Get">
+            <summary>
+            Gets all the visible objects.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDb.Get(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Gets all the visible objects for the given keys.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDb.Get(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoVersionKey})">
+            <summary>
+            Gets all the objects for the given keys.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDb.Get(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Gets all latest versions of osm objects within the given bounding box.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDb.OpenChangeset(OsmSharp.Changesets.Changeset)">
+            <summary>
+            Opens a new changeset.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDb.ApplyChangeset(System.Int64,OsmSharp.Changesets.OsmChange)">
+            <summary>
+            Applies the given changeset.
+            </summary>
+            <param name="id">The id of the changeset to apply the changes for.</param>
+            <param name="changeset">The changes to apply.</param>
+            <returns>The diff result result object containing the diff result and status information.</returns>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDb.UpdateChangesetInfo(OsmSharp.Changesets.Changeset)">
+            <summary>
+            Updates the changeset with the new info.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDb.CloseChangeset(System.Int64)">
+            <summary>
+            Closes the changeset with the given id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDb.GetChangeset(System.Int64)">
+            <summary>
+            Gets the changeset for the given id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDb.GetChanges(System.Int64)">
+            <summary>
+            Gets the changes for the given changeset.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.IHistoryDbExtensions">
+            <summary>
+            Contains extensions for the history db.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDbExtensions.Add(OsmSharp.Db.IHistoryDb,OsmSharp.OsmGeo)">
+            <summary>
+            Adds a new object to the db.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IHistoryDbExtensions.GetComplete(OsmSharp.Db.IHistoryDb)">
+            <summary>
+            Gets all data in the form of a complete stream.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.Impl.Extensions">
+            <summary>
+            Contains extension methods.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.Extensions.CreateSnapshotDb(OsmSharp.Db.Impl.ISnapshotDbImpl)">
+            <summary>
+            Creates a snapshot db from a snapshot db implementation.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.Extensions.CreateHistoryDb(OsmSharp.Db.Impl.IHistoryDbImpl)">
+            <summary>
+            Creates a history db from a history db implementation.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.Impl.IHistoryDbImpl">
+            <summary>
+            Abstract representation of a history db implementation.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.Clear">
+            <summary>
+            Clears all data.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.Add(System.Collections.Generic.IEnumerable{OsmSharp.OsmGeo})">
+            <summary>
+            Adds an object.
+            </summary>
+            <remarks>The object gets inserted into the archive it is not visible.</remarks>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.Get">
+            <summary>
+            Gets all non-archived objects.
+            </summary>
+            <returns>
+            Objects sorted by type (node, way, relation) and then id ascending.
+            </returns>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.GetWithArchived">
+            <summary>
+            Gets all objects.
+            </summary>
+            <returns>
+            Objects sorted by type (node, way, relation) and then id and then version ascending.
+            </returns>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.Get(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Gets all non-archived objects with the given keys.
+            </summary>
+            <returns>
+            Objects sorted by type (node, way, relation) and then id ascending.
+            </returns>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.Get(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoVersionKey})">
+            <summary>
+            Gets all objects with the given keys.
+            </summary>
+            <returns>
+            Objects sorted by type (node, way, relation) and then id and then version ascending.
+            </returns>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.GetWithArchived(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Gets allobjects with the given keys.
+            </summary>
+            <returns>
+            Objects sorted by type (node, way, relation) and then id and then version ascending.
+            </returns>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.Get(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Gets all non-archived objects within the given bounding box.
+            </summary>
+            <returns>
+            - All non-archived nodes within bounding box.
+            - All non-archived ways with at least one node.
+            - All non-archived nodes outside of the bounding box but member of a way with at least one node.
+            - All non-archived relations with at least one member that is a node within the bounding box or a way with at least one node in the bounding box.
+            - Sorted by type (node, way, relation) and then id ascending.
+            </returns>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.Archive(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Archives all the objects with the given keys.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.GetLastId(OsmSharp.OsmGeoType)">
+            <summary>
+            Gets the last id for the given type.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.GetLastChangesetId">
+            <summary>
+            Gets the last changeset id.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.AddOrUpdate(OsmSharp.Changesets.Changeset)">
+            <summary>
+            Adds or updates a changeset.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.AddChanges(System.Int64,OsmSharp.Changesets.OsmChange)">
+            <summary>
+            Adds changes for the given changeset.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.GetChangeset(System.Int64)">
+            <summary>
+            Gets the changeset with the given id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.IHistoryDbImpl.GetChanges(System.Int64)">
+            <summary>
+            Gets all then changes for the given changeset.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.Impl.ISnapshotDbImpl">
+            <summary>
+            Abstract representation of basic operations a snapshot db should support.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.ISnapshotDbImpl.Clear">
+            <summary>
+            Clears all data.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.ISnapshotDbImpl.AddOrUpdate(System.Collections.Generic.IEnumerable{OsmSharp.OsmGeo})">
+            <summary>
+            Adds or updates the given objects.
+            </summary>
+            <remarks>
+            - Adds objects that don't exist yet.
+            - Updates objects that already exist.
+            </remarks>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.ISnapshotDbImpl.Get">
+            <summary>
+            Gets all objects.
+            </summary>
+            <returns>
+            All objects sorted by type (node, way, relation) and then id ascending.
+            </returns>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.ISnapshotDbImpl.Get(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Gets all objects for the given keys.
+            </summary>
+            <returns>
+            All objects for the given keys sorted by type (node, way, relation) and then id ascending.
+            </returns>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.ISnapshotDbImpl.Get(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Gets all objects in the given bounding box.
+            </summary>
+            <returns>
+            - All nodes within bounding box.
+            - All ways with at least one node.
+            - All nodes outside of the bounding box but member of a way with at least one node.
+            - All relations with at least one member that is a node within the bounding box or a way with at least one node in the bounding box.
+            - Sorted by type (node, way, relation) and then id ascending.
+            </returns>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.ISnapshotDbImpl.Delete(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Deletes all objects for the given keys.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.ISnapshotDbImpl.GetWays(System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary>
+            Gets all ways with at least one node in the given ids.
+            </summary>
+            <returns>
+            All ways with at least one node in the given id set sorted by id ascending.
+            </returns>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.ISnapshotDbImpl.GetRelations(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Gets all relations with at least one member in the given keys.
+            </summary>
+            <returns>
+            All relations with at least one member in the given key set sorted by id ascending.
+            </returns>
+        </member>
+        <member name="T:OsmSharp.Db.Impl.MemoryHistoryDb">
+            <summary>
+            An in-memory data repository of a full-history db.
+            </summary>
+            <remarks>This is only a not-very-efficient reference implementation.</remarks>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.#ctor">
+            <summary>
+            Creates a new history db.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.Clear">
+            <summary>
+            Clears all data from this db.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.Add(OsmSharp.OsmGeo)">
+            <summary>
+            Adds osm objects in the db exactly as they are given.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.Add(System.Collections.Generic.IEnumerable{OsmSharp.OsmGeo})">
+            <summary>
+            Adds osm objects in the db exactly as they are given.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.Get">
+            <summary>
+            Gets all the visible objects in the form of an osm stream source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.GetWithArchived">
+            <summary>
+            Gets all the objects in the form of an osm stream source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.Get(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Gets all visible objects for the given keys.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.Get(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoVersionKey})">
+            <summary>
+            Gets all objects for the given keys.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.GetWithArchived(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Gets all visible objects for the given keys.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.Get(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Gets all visbible objects within the given bounding box.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.Archive(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Archives the objects for the given key.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.GetLastId(OsmSharp.OsmGeoType)">
+            <summary>
+            Gets the last id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.GetLastChangesetId">
+            <summary>
+            Gets the last changeset id.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.AddOrUpdate(OsmSharp.Changesets.Changeset)">
+            <summary>
+            Adds or updates the given changeset.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.AddChanges(System.Int64,OsmSharp.Changesets.OsmChange)">
+            <summary>
+            Adds changes.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.GetChangeset(System.Int64)">
+            <summary>
+            Gets the changes.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.GetChanges(System.Int64)">
+            <summary>
+            Gets the changes for the given id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.Get(OsmSharp.OsmGeoType,System.Int64)">
+            <summary>
+            Gets an osm object of the given type, the given id and the given version #.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemoryHistoryDb.Get(OsmSharp.OsmGeoType,System.Int64,System.Int32)">
+            <summary>
+            Gets an osm object of the given type, the given id and the given version #.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.Impl.MemorySnapshotDb">
+            <summary>
+            An in-memory data repository of OSM data primitives.
+            </summary>
+            <remarks>This is only a not-very-efficient reference implementation.</remarks>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemorySnapshotDb.#ctor">
+            <summary>
+            Creates a new memory data structure using the default geometry interpreter.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemorySnapshotDb.#ctor(OsmSharp.OsmGeo[])">
+            <summary>
+            Creates a new memory data structure using the default geometry interpreter.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemorySnapshotDb.#ctor(System.Collections.Generic.IEnumerable{OsmSharp.OsmGeo})">
+            <summary>
+            Creates a new memory data structure using the default geometry interpreter.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Db.Impl.MemorySnapshotDb.IsSynchronized">
+            <summary>
+            Returns true if this db is thread-safe.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemorySnapshotDb.Get">
+            <summary>
+            Gets all the objects in the form of an osm stream source.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemorySnapshotDb.Get(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Returns all the objects within a given bounding box.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemorySnapshotDb.Clear">
+            <summary>
+            Clears all data.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemorySnapshotDb.AddOrUpdate(OsmSharp.OsmGeo)">
+            <summary>
+            Adds or updates the given osm object in the db exactly as given.
+            </summary>
+            <remarks>
+            - Replaces objects that already exist with the given id.
+            </remarks>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemorySnapshotDb.AddOrUpdate(System.Collections.Generic.IEnumerable{OsmSharp.OsmGeo})">
+            <summary>
+            Adds or updates osm objects in the db exactly as they are given.
+            </summary>
+            <remarks>
+            - Replaces objects that already exist with the given id.
+            </remarks>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemorySnapshotDb.Get(OsmSharp.OsmGeoType,System.Int64)">
+            <summary>
+            Gets an osm object of the given type and the given id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemorySnapshotDb.Get(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Gets all osm objects with the given types and the given id's.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemorySnapshotDb.Delete(OsmSharp.OsmGeoType,System.Int64)">
+            <summary>
+            Deletes the osm object with the given type, the given id without applying a changeset.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemorySnapshotDb.Delete(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Deletes all osm objects with the given types and the given id's.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemorySnapshotDb.GetWays(System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary>
+            Gets all ways with at least one node in the given id set.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.Impl.MemorySnapshotDb.GetRelations(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Gets all relations with at least one member in the given key set.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.OsmGeoKey">
+            <summary>
+            A unique identifier including types.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Db.OsmGeoKey.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Db.OsmGeoKey.Id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.OsmGeoKey.GetHashCode">
+            <summary>
+            Serves as a hashfunction.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.OsmGeoKey.Equals(System.Object)">
+            <summary>
+            Returns true if the given object represents the same key.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.IOsmGeoSource">
+            <summary>
+            Abstract representation of a source of OSM-objects.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IOsmGeoSource.Get(OsmSharp.OsmGeoType,System.Int64)">
+            <summary>
+            Returns an OsmGeo object with the given id and type from this source.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.IOsmGeoSourceExtensions">
+            <summary>
+            Contains extension methods for an osm-geo source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IOsmGeoSourceExtensions.GetNode(OsmSharp.Db.IOsmGeoSource,System.Int64)">
+            <summary>
+            Gets the node with the given id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IOsmGeoSourceExtensions.GetWay(OsmSharp.Db.IOsmGeoSource,System.Int64)">
+            <summary>
+            Gets the way with the given id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.IOsmGeoSourceExtensions.GetRelation(OsmSharp.Db.IOsmGeoSource,System.Int64)">
+            <summary>
+            Gets the relation with the given id.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.ISnapshotDb">
+            <summary>
+            Abstract representation of a database to store OSM nodes, ways and relations without version and using only one object per id.
+            
+            - Only one node per id.
+            - Only one way per id.
+            - Only one relation per id.
+            - Does not generate id's, objects are stored as-is.
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.ISnapshotDb.Clear">
+            <summary>
+            Clears all data.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.ISnapshotDb.AddOrUpdate(System.Collections.Generic.IEnumerable{OsmSharp.OsmGeo})">
+            <summary>
+            Adds or updates osm objects in the db exactly as they are given.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.ISnapshotDb.Get">
+            <summary>
+            Gets all the objects.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Db.ISnapshotDb.Get(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Gets all objects for the given keys.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.ISnapshotDb.Get(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Gets all objects within the given bounding box.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.ISnapshotDb.Delete(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Deletes all osm objects with the given types and the given id's.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.ISnapshotDb.ApplyChangeset(OsmSharp.Changesets.OsmChange)">
+            <summary>
+            Applies the given changeset, the changeset is applied using best-effort.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.ISnapshotDbExtensions">
+            <summary>
+            Contains extensions for the snapshot db.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.ISnapshotDbExtensions.Get(OsmSharp.Db.ISnapshotDb,System.Collections.Generic.IList{OsmSharp.OsmGeoType},System.Collections.Generic.IList{System.Int64})">
+            <summary>
+            Gets all osm objects with the given types and the given id's.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.ISnapshotDbExtensions.Delete(OsmSharp.Db.ISnapshotDb,OsmSharp.Db.OsmGeoKey)">
+            <summary>
+            Deletes the object for the given key.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.ISnapshotDbExtensions.DeleteNode(OsmSharp.Db.ISnapshotDb,System.Int64)">
+            <summary>
+            Deletes the node with the given id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.ISnapshotDbExtensions.DeleteWay(OsmSharp.Db.ISnapshotDb,System.Int64)">
+            <summary>
+            Deletes the way with the given id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.ISnapshotDbExtensions.DeleteRelation(OsmSharp.Db.ISnapshotDb,System.Int64)">
+            <summary>
+            Deletes the relation with the given id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.ISnapshotDbExtensions.AddOrUpdate(OsmSharp.Db.ISnapshotDb,OsmSharp.OsmGeo)">
+            <summary>
+            Adds or objects the given object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.ISnapshotDbExtensions.GetComplete(OsmSharp.Db.ISnapshotDb)">
+            <summary>
+            Gets all data in the form of a complete stream.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.OsmGeoVersionKey">
+            <summary>
+            A unique identifier including types and version #.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Db.OsmGeoVersionKey.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Db.OsmGeoVersionKey.Id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Db.OsmGeoVersionKey.Version">
+            <summary>
+            Gets or sets the version #.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.OsmGeoVersionKey.GetHashCode">
+            <summary>
+            Serves as a hashfunction.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.OsmGeoVersionKey.Equals(System.Object)">
+            <summary>
+            Returns true if the given object represents the same key.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Db.SnapshotDb">
+            <summary>
+            An internal class implementing a snapshot db.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.SnapshotDb.#ctor(OsmSharp.Db.Impl.ISnapshotDbImpl)">
+            <summary>
+            Creates a new snapshot db.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.SnapshotDb.AddOrUpdate(System.Collections.Generic.IEnumerable{OsmSharp.OsmGeo})">
+            <summary>
+            Adds or updates.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.SnapshotDb.Clear">
+            <summary>
+            Clears all data.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.SnapshotDb.Delete(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Deletes all given objects.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.SnapshotDb.Get">
+            <summary>
+            Gets all objects.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Db.SnapshotDb.Get(OsmSharp.OsmGeoType,System.Int64)">
+            <summary>
+            Gets the object with the given type and given id.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.SnapshotDb.Get(System.Collections.Generic.IEnumerable{OsmSharp.Db.OsmGeoKey})">
+            <summary>
+            Returns all given objects.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.SnapshotDb.Get(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Gets all objects within the given bounding box.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Db.SnapshotDb.ApplyChangeset(OsmSharp.Changesets.OsmChange)">
+            <summary>
+            Applies the given changes.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Extensions">
+            <summary>
+            Contains extension methods.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Extensions.ToInvariantString(System.Object)">
+            <summary>
+            Returns a string representing the object in a culture invariant way.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Extensions.CompareByIdVersionAndType(OsmSharp.OsmGeo,OsmSharp.OsmGeo)">
+            <summary>
+            Compares this OsmGeo object to another using type, id and version number. Nodes before ways, ways before relations.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Extensions.CompareByIdAndType(OsmSharp.OsmGeo,OsmSharp.OsmGeo)">
+            <summary>
+            Compares this OsmGeo object to another using type, and id. Nodes before ways, ways before relations.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.Encoder">
+            <summary>
+            Encoder/decoder for OSM-PBF format.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.IO.PBF.Encoder.OSMHeader">
+            <summary>
+            The string representing an OSMHeader type.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.IO.PBF.Encoder.OSMData">
+            <summary>
+            The string representing and OSMData type.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.Decode(OsmSharp.IO.PBF.PrimitiveBlock,OsmSharp.IO.PBF.IPBFOsmPrimitiveConsumer,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Decodes the block.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.Encode(OsmSharp.IO.PBF.PrimitiveBlock,System.Collections.Generic.Dictionary{System.String,System.Int32},System.Collections.Generic.List{OsmSharp.OsmGeo})">
+            <summary>
+            Encodes the nodes into the given block.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.DecodeNode(OsmSharp.IO.PBF.PrimitiveBlock,OsmSharp.IO.PBF.Node,OsmSharp.Node)">
+            <summary>
+            Converts the PBF node into an OsmSharp-node.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.DecodeNode(OsmSharp.IO.PBF.PrimitiveBlock,OsmSharp.IO.PBF.Node)">
+            <summary>
+            Converts the PBF node into an OsmSharp-node.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.EncodeString(OsmSharp.IO.PBF.PrimitiveBlock,System.Collections.Generic.Dictionary{System.String,System.Int32},System.String)">
+            <summary>
+            Encodes a string.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.EncodeNode(OsmSharp.IO.PBF.PrimitiveBlock,System.Collections.Generic.Dictionary{System.String,System.Int32},OsmSharp.Node)">
+            <summary>
+            Encodes an OsmSharp-node into a PBF-node.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.EncodeNode(OsmSharp.IO.PBF.PrimitiveBlock,System.Collections.Generic.Dictionary{System.String,System.Int32},OsmSharp.IO.PBF.Node,OsmSharp.Node)">
+            <summary>
+            Encodes an OsmSharp-node into a PBF-node.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.DecodeWay(OsmSharp.IO.PBF.PrimitiveBlock,OsmSharp.IO.PBF.Way,OsmSharp.Way)">
+            <summary>
+            Converts a PBF-way into an OsmSharp-way.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.DecodeWay(OsmSharp.IO.PBF.PrimitiveBlock,OsmSharp.IO.PBF.Way)">
+            <summary>
+            Converts a PBF way into an OsmSharp-way.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.EncodeWay(OsmSharp.IO.PBF.PrimitiveBlock,System.Collections.Generic.Dictionary{System.String,System.Int32},OsmSharp.Way)">
+            <summary>
+            Encodes an OsmSharp-way into a PBF-way.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.DecodeRelation(OsmSharp.IO.PBF.PrimitiveBlock,OsmSharp.IO.PBF.Relation,OsmSharp.Relation)">
+            <summary>
+            Converts a PBF way into an OsmSharp-relation.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.DecodeRelation(OsmSharp.IO.PBF.PrimitiveBlock,OsmSharp.IO.PBF.Relation)">
+            <summary>
+            Converts a PBF way into an OsmSharp-relation.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.EncodeRelation(OsmSharp.IO.PBF.PrimitiveBlock,System.Collections.Generic.Dictionary{System.String,System.Int32},OsmSharp.Relation)">
+            <summary>
+            Encodes an OsmSharp-relation into a PBF-relation.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.EncodeLatLon(System.Single,System.Int64,System.Int64)">
+            <summary>
+            Encodes a lat/lon value into an offset.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.DecodeLatLon(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            Decodes a lat/lon value from an offset.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.EncodeTimestamp(System.DateTime,System.Int64)">
+            <summary>
+            Encodes a timestamp.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Encoder.DecodeTimestamp(System.Int32,System.Int64)">
+            <summary>
+            Decodes a timestamp.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.Blob">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Blob.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Blob.raw">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Blob.raw_size">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Blob.zlib_data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Blob.lzma_data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Blob.bzip2_data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.BlobHeader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.BlobHeader.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.BlobHeader.type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.BlobHeader.indexdata">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.BlobHeader.datasize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.IPBFOsmPrimitiveConsumer">
+            <summary>
+            Consumers Osm PBF primitives.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.IPBFOsmPrimitiveConsumer.ProcessNode(OsmSharp.IO.PBF.PrimitiveBlock,OsmSharp.IO.PBF.Node)">
+            <summary>
+            Processes the given node using the properties in the given block.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.IPBFOsmPrimitiveConsumer.ProcessWay(OsmSharp.IO.PBF.PrimitiveBlock,OsmSharp.IO.PBF.Way)">
+            <summary>
+            Processes the given way using the properties in the given block.
+            </summary>
+            <param name="block"></param>
+            <param name="way"></param>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.IPBFOsmPrimitiveConsumer.ProcessRelation(OsmSharp.IO.PBF.PrimitiveBlock,OsmSharp.IO.PBF.Relation)">
+            <summary>
+            Processing the given relation using the properties in the given block.
+            </summary>
+            <param name="block"></param>
+            <param name="relation"></param>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.HeaderBlock">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.HeaderBlock.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.HeaderBlock.bbox">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.HeaderBlock.required_features">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.HeaderBlock.optional_features">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.HeaderBlock.writingprogram">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.HeaderBlock.source">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.HeaderBBox">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.HeaderBBox.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.HeaderBBox.left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.HeaderBBox.right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.HeaderBBox.top">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.HeaderBBox.bottom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.PrimitiveBlock">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.PrimitiveBlock.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.PrimitiveBlock.stringtable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.PrimitiveBlock.primitivegroup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.PrimitiveBlock.granularity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.PrimitiveBlock.lat_offset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.PrimitiveBlock.lon_offset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.PrimitiveBlock.date_granularity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.PrimitiveGroup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.PrimitiveGroup.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.PrimitiveGroup.nodes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.PrimitiveGroup.dense">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.PrimitiveGroup.ways">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.PrimitiveGroup.relations">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.PrimitiveGroup.changesets">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.StringTable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.StringTable.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.StringTable.s">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.Info">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Info.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Info.version">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Info.timestamp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Info.changeset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Info.uid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Info.user_sid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.DenseInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.DenseInfo.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.DenseInfo.version">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.DenseInfo.timestamp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.DenseInfo.changeset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.DenseInfo.uid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.DenseInfo.user_sid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.ChangeSet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.ChangeSet.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.ChangeSet.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.ChangeSet.keys">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.ChangeSet.vals">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.ChangeSet.info">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.ChangeSet.created_at">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.ChangeSet.closetime_delta">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.ChangeSet.open">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.ChangeSet.bbox">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.Node">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Node.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Node.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Node.keys">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Node.vals">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Node.info">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Node.lat">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Node.lon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.DenseNodes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.DenseNodes.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.DenseNodes.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.DenseNodes.denseinfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.DenseNodes.lat">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.DenseNodes.lon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.DenseNodes.keys_vals">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.Way">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Way.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Way.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Way.keys">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Way.vals">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Way.info">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Way.refs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.Relation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.Relation.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Relation.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Relation.keys">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Relation.vals">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Relation.info">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Relation.roles_sid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Relation.memids">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:OsmSharp.IO.PBF.Relation.types">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.Relation.MemberType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:OsmSharp.IO.PBF.Relation.MemberType.NODE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:OsmSharp.IO.PBF.Relation.MemberType.WAY">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:OsmSharp.IO.PBF.Relation.MemberType.RELATION">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.PBFExtensions">
+            <summary>
+            Contains helper/extension methods to help with PBF encoding/decoding.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.PBFExtensions.GetString(System.Text.Encoding,System.Byte[])">
+            <summary>
+            Decodes a sequence of bytes from the specified byte array into a string.
+            </summary>
+            <param name="encoding"></param>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="F:OsmSharp.IO.PBF.PBFExtensions.EpochTicks">
+            <summary>
+            Ticks since 1/1/1970
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.PBFExtensions.FromUnixTime(System.Int64)">
+            <summary>
+            Converts a number of milliseconds from 1/1/1970 into a standard DateTime.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.PBFExtensions.ToUnixTime(System.DateTime)">
+            <summary>
+            Converts a standard DateTime into the number of milliseconds since 1/1/1970.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.PBFReader">
+            <summary>
+            Reads PBF files.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.PBFReader.#ctor(System.IO.Stream)">
+            <summary>
+            Creates a new PBF reader.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.PBFReader.Dispose">
+            <summary>
+            Closes this reader.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.IO.PBF.PBFReader._block">
+            <summary>
+            Holds a block object that can be reused.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.PBFReader.MoveNext">
+            <summary>
+            Moves to the next primitive block, returns null at the end.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OsmSharp.IO.PBF.PBFWriter">
+            <summary>
+            Writes PBF files.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.IO.PBF.PBFWriter._stream">
+            <summary>
+            Holds the stream.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.PBFWriter.#ctor(System.IO.Stream)">
+            <summary>
+            Creates a new PBF write.
+            </summary>
+            <param name="stream"></param>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.PBFWriter.Dispose">
+            <summary>
+            Closes this writer.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.PBF.PBFWriter.ReadAll(OsmSharp.IO.PBF.PrimitiveBlock)">
+            <summary>
+            Writes one PBF primitive block.
+            </summary>
+            <param name="block">The block to write.</param>
+        </member>
+        <member name="T:OsmSharp.IO.Xml.XmlExtensions">
+            <summary>
+            Contains extension methods for xml readers and writers.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.WriteAttribute(System.Xml.XmlWriter,System.String,System.Nullable{System.DateTime})">
+            <summary>
+            Writes a datetime as an attribute.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.WriteAttribute(System.Xml.XmlWriter,System.String,System.Nullable{System.Int64})">
+            <summary>
+            Writes an Int64 as an attribute.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.WriteAttribute(System.Xml.XmlWriter,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Writes an Int32 as an attribute.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.WriteAttribute(System.Xml.XmlWriter,System.String,System.Nullable{System.Single})">
+            <summary>
+            Writes a single as an attribute.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.WriteAttribute(System.Xml.XmlWriter,System.String,System.Nullable{System.Double})">
+            <summary>
+            Writes a double as an attribute.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.WriteAttribute(System.Xml.XmlWriter,System.String,System.String)">
+            <summary>
+            Writes a string as an attribute.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.WriteAttribute(System.Xml.XmlWriter,System.String,System.Nullable{System.Boolean})">
+            <summary>
+            Writes a bool as an attribute.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.WriteElement(System.Xml.XmlWriter,System.String,System.Xml.Serialization.IXmlSerializable)">
+            <summary>
+            Writes an xml serializable object as an element.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.WriteElements(System.Xml.XmlWriter,System.String,System.Xml.Serialization.IXmlSerializable[])">
+            <summary>
+            Writes an xml serializable object as an element.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.GetAttributeDouble(System.Xml.XmlReader,System.String)">
+            <summary>
+            Reads a double attribute.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.GetAttributeSingle(System.Xml.XmlReader,System.String)">
+            <summary>
+            Reads a single attribute.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.GetElements(System.Xml.XmlReader,System.Tuple{System.String,System.Action}[])">
+            <summary>
+            Gets elements using the given actions.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.GetElements(System.Xml.XmlReader,System.Collections.Generic.Dictionary{System.String,System.Action})">
+            <summary>
+            Gets elements using the given actions.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.GetAttributeInt64(System.Xml.XmlReader,System.String)">
+            <summary>
+            Reads an Int64 attribute.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.GetAttributeInt32(System.Xml.XmlReader,System.String)">
+            <summary>
+            Reads an Int32 attribute.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.GetAttributeBool(System.Xml.XmlReader,System.String)">
+            <summary>
+            Reads a boolean attribute.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.GetAttributeDateTime(System.Xml.XmlReader,System.String)">
+            <summary>
+            Reads a datetime attribute.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.IO.Xml.XmlExtensions.SerializeToXml``1(``0)">
+            <summary>
+            Serializes to xml with default settings for OSM-related entities.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.Exceptions.StreamNotSortedException">
+            <summary>
+            An exception thrown when a stream is not sorted but it was expected to be.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Exceptions.StreamNotSortedException.#ctor">
+            <summary>
+            Creates a new exception.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.Filters.OsmStreamFilter">
+            <summary>
+            An OSM stream filter.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Streams.Filters.OsmStreamFilter._source">
+            <summary>
+            Holds the reader.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilter.#ctor">
+            <summary>
+            Creates a new OSM filter.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilter.RegisterSource(OsmSharp.Streams.OsmStreamSource)">
+            <summary>
+            Registers a reader as the source to filter.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.Filters.OsmStreamFilter.Source">
+            <summary>
+            Returns the reader being filtered.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilter.GetAllMeta">
+            <summary>
+            Gets all meta-data from all sources and filters that provide this filter of data.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilter.Current">
+            <summary>
+            Returns the current object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OsmSharp.Streams.Filters.OsmStreamFilterDelegate">
+            <summary>
+            A filter that use a function to filter objects.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterDelegate.#ctor">
+            <summary>
+            Creates a new filter with events.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterDelegate.#ctor(System.Object)">
+            <summary>
+            Creates a new filter with events.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Streams.Filters.OsmStreamFilterDelegate.MoveToNextEvent">
+            <summary>
+            Called when the move is made to the next object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterDelegate.MoveNext(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Move to the next item in the stream.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterDelegate.DoMoveNext">
+            <summary>
+            Moves this filter to the next object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterDelegate.Current">
+            <summary>
+            Returns the current object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterDelegate.Reset">
+            <summary>
+            Resets this filter.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.Filters.OsmStreamFilterDelegate.CanReset">
+            <summary>
+            Returns true if this filter can be reset.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.Filters.OsmStreamFilterMerge">
+            <summary>
+            A filter to merge two sorted stream together.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterMerge.#ctor">
+            <summary>
+            Creates a new filter.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterMerge.#ctor(OsmSharp.Streams.Filters.ConflictResolutionType)">
+            <summary>
+            Creates a new filter.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.Filters.OsmStreamFilterMerge.CanReset">
+            <summary>
+            Returns true if this filter can be reset.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterMerge.Reset">
+            <summary>
+            Resets this filter.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.Filters.OsmStreamFilterMerge.IsSorted">
+            <summary>
+            Returns true if this filter returns sorted objects.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterMerge.GetAllMeta">
+            <summary>
+            Gets all meta-data.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterMerge.RegisterSource(OsmSharp.Streams.OsmStreamSource)">
+            <summary>
+            Registers a source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterMerge.MoveNext(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Move to the next object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterMerge.Current">
+            <summary>
+            Returns the current object.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.Filters.ConflictResolutionType">
+            <summary>
+            Types of conflict resolution.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Streams.Filters.ConflictResolutionType.None">
+            <summary>
+            Keep both entities.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Streams.Filters.ConflictResolutionType.FirstStream">
+            <summary>
+            Keep object from the first stream only.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.Filters.OsmStreamFilterProgress">
+            <summary>
+            A stream filter that reports progress.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterProgress.#ctor">
+            <summary>
+            Creates a new progress reporting source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterProgress.#ctor(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            Creates a new progress reporting source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterProgress.MoveNext(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Move to the next item in the stream.
+            </summary>
+            <param name="ignoreNodes">Makes this source skip all nodes.</param>
+            <param name="ignoreWays">Makes this source skip all ways.</param>
+            <param name="ignoreRelations">Makes this source skip all relations.</param>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterProgress.Current">
+            <summary>
+            Returns the current object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterProgress.Reset">
+            <summary>
+            Resets this source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Filters.OsmStreamFilterProgress.Initialize">
+            <summary>
+            Initializes this source.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.Filters.OsmStreamFilterProgress.CanReset">
+            <summary>
+            Returns true if this source can be reset.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.OsmStreamExtensions">
+            <summary>
+            Contains extension methods related to the stream implementations.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamExtensions.RegisterSource(OsmSharp.Streams.IOsmStreamTarget,System.Collections.Generic.IEnumerable{OsmSharp.OsmGeo})">
+            <summary>
+            Registers a source on this target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamExtensions.RegisterSource(OsmSharp.Streams.IOsmStreamTarget,System.Collections.Generic.IEnumerable{OsmSharp.OsmGeo},System.Func{OsmSharp.OsmGeo,System.Boolean})">
+            <summary>
+            Registers a source but keeps only the objects that satify a given condition.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamExtensions.RegisterSource(OsmSharp.Streams.IOsmStreamTarget,System.Collections.Generic.IEnumerable{OsmSharp.OsmGeo},System.Action{OsmSharp.OsmGeo})">
+            <summary>
+            Registers a source and also allows a given action on all objects coming from this source.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.PBFOsmStreamSource">
+            <summary>
+            A source of PBF formatted OSM data.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamSource.#ctor(System.IO.Stream)">
+            <summary>
+            Creates a new source of PBF formated OSM data.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamSource.Initialize">
+            <summary>
+            Initializes the current source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamSource.MoveNext(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Move to the next item in the stream.
+            </summary>
+            <param name="ignoreNodes">Makes this source skip all nodes.</param>
+            <param name="ignoreWays">Makes this source skip all ways.</param>
+            <param name="ignoreRelations">Makes this source skip all relations.</param>
+            <returns></returns>
+        </member>
+        <member name="F:OsmSharp.Streams.PBFOsmStreamSource._current">
+            <summary>
+            Holds the current object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamSource.Current">
+            <summary>
+            Returns the current geometry.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamSource.Reset">
+            <summary>
+            Resetting this data source 
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.PBFOsmStreamSource.CanReset">
+            <summary>
+            Returns true if this source can be reset.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Streams.PBFOsmStreamSource._reader">
+            <summary>
+            Holds the PBF reader.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamSource.InitializePBFReader">
+            <summary>
+            Initializes the PBF reader.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamSource.MoveToNextPrimitive(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Moves the PBF reader to the next primitive or returns one of the cached ones.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:OsmSharp.Streams.PBFOsmStreamSource._cachedPrimitives">
+            <summary>
+            Holds the cached primitives.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamSource.InitializeBlockCache">
+            <summary>
+            Initializes the block cache.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamSource.QueuePrimitive(OsmSharp.IO.PBF.PrimitiveBlock,System.Object)">
+            <summary>
+            Queues the primitives.
+            </summary>
+            <param name="block"></param>
+            <param name="primitive"></param>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamSource.DeQueuePrimitive">
+            <summary>
+            DeQueues a primitive.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamSource.OsmSharp#IO#PBF#IPBFOsmPrimitiveConsumer#ProcessNode(OsmSharp.IO.PBF.PrimitiveBlock,OsmSharp.IO.PBF.Node)">
+            <summary>
+            Processes a node.
+            </summary>
+            <param name="block"></param>
+            <param name="node"></param>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamSource.OsmSharp#IO#PBF#IPBFOsmPrimitiveConsumer#ProcessWay(OsmSharp.IO.PBF.PrimitiveBlock,OsmSharp.IO.PBF.Way)">
+            <summary>
+            Processes a way.
+            </summary>
+            <param name="block"></param>
+            <param name="way"></param>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamSource.OsmSharp#IO#PBF#IPBFOsmPrimitiveConsumer#ProcessRelation(OsmSharp.IO.PBF.PrimitiveBlock,OsmSharp.IO.PBF.Relation)">
+            <summary>
+            Processes a relation.
+            </summary>
+            <param name="block"></param>
+            <param name="relation"></param>
+        </member>
+        <member name="T:OsmSharp.Streams.PBFOsmStreamTarget">
+            <summary>
+            A PBF stream target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamTarget.#ctor(System.IO.Stream)">
+            <summary>
+            Creates a new PBF stream target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamTarget.Initialize">
+            <summary>
+            Initializes this target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamTarget.FlushBlock">
+            <summary>
+            Flushes the current block of data.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamTarget.AddNode(OsmSharp.Node)">
+            <summary>
+            Adds a node.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamTarget.AddWay(OsmSharp.Way)">
+            <summary>
+            Adds a way.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamTarget.AddRelation(OsmSharp.Relation)">
+            <summary>
+            Adds a relation.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamTarget.Flush">
+            <summary>
+            Flushes data in this stream.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.PBFOsmStreamTarget.Close">
+            <summary>
+            Closes this target.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.Complete.OsmCompleteEnumerableStreamSource">
+            <summary>
+            An osm complete enumerable stream source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmCompleteEnumerableStreamSource.#ctor(System.Collections.Generic.IEnumerable{OsmSharp.Complete.ICompleteOsmGeo})">
+            <summary>
+            Creates a new osm complete source based on the given enumerable.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.Complete.OsmCompleteEnumerableStreamSource.CanReset">
+            <summary>
+            Returns true if this source can be reset.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmCompleteEnumerableStreamSource.Current">
+            <summary>
+            Returns the current object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmCompleteEnumerableStreamSource.Initialize">
+            <summary>
+            Initializes this source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmCompleteEnumerableStreamSource.MoveNext">
+            <summary>
+            Moves to the next object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmCompleteEnumerableStreamSource.Reset">
+            <summary>
+            Resets this source.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.Complete.OsmCompleteStreamSource">
+            <summary>
+            Represents a stream source that converts a stream of simple osm objects into a stream of complete osm objects.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmCompleteStreamSource.#ctor">
+            <summary>
+            Creates a new source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmCompleteStreamSource.Initialize">
+            <summary>
+            Initializes this source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmCompleteStreamSource.MoveNext">
+            <summary>
+            Move to the next item in the stream.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmCompleteStreamSource.Current">
+            <summary>
+            Returns the current item in the stream.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmCompleteStreamSource.Reset">
+            <summary>
+            Resets the source to the beginning.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.Complete.OsmCompleteStreamSource.CanReset">
+            <summary>
+            Returns true if this source can be reset.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmCompleteStreamSource.GetEnumerator">
+            <summary>
+            Returns the enumerator for this enumerable.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmCompleteStreamSource.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns the enumerator for this enumerable.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:OsmSharp.Streams.Complete.OsmCompleteStreamSource.System#Collections#Generic#IEnumerator{OsmSharp#Complete#ICompleteOsmGeo}#Current">
+            <summary>
+            Returns the current object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmCompleteStreamSource.Dispose">
+            <summary>
+            Disposes all resources associated with this source.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.Complete.OsmCompleteStreamSource.System#Collections#IEnumerator#Current">
+            <summary>
+            Returns the current object.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource">
+            <summary>
+            Represents a complete stream source that converts a simple stream into a complete stream.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource.#ctor(OsmSharp.Streams.OsmStreamSource)">
+            <summary>
+            Creates a new osm simple complete stream.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource.#ctor(OsmSharp.Streams.OsmStreamSource,OsmSharp.Db.ISnapshotDb)">
+            <summary>
+            Creates a new osm simple complete stream.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource.Initialize">
+            <summary>
+            Initializes this source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource.MoveNext">
+            <summary>
+            Moves to the next object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource.Seek">
+            <summary>
+            Seeks for objects that are children of other objects.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource.ReportNodeUsage(System.Int64)">
+            <summary>
+            Reports that the node with the given id was used.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource.MarkNodeAsChild(System.Int64)">
+            <summary>
+            Marks the given node as child.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource.ReportWayUsage(System.Int64)">
+            <summary>
+            Reports that the way with the given id was used.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource.MarkWayAsChild(System.Int64)">
+            <summary>
+            Marks the given way as child.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource.ReportRelationUsage(System.Int64)">
+            <summary>
+            Reports that the relation with the given id was used.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource.MarkRelationAsChild(System.Int64)">
+            <summary>
+            Marks the given relation as child.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource.Current">
+            <summary>
+            Returns the current object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource.Reset">
+            <summary>
+            Resets this source.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.Complete.OsmSimpleCompleteStreamSource.CanReset">
+            <summary>
+            Returns true if this source can be reset.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.OsmEnumerableStreamSource">
+            <summary>
+            An OSM Stream Reader that wraps around a collection of OSM objects.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmEnumerableStreamSource.#ctor(System.Collections.Generic.IEnumerable{OsmSharp.OsmGeo})">
+            <summary>
+            Creates a new OsmBase source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmEnumerableStreamSource.MoveNext(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Move to the next item in the stream.
+            </summary>
+            
+        </member>
+        <member name="M:OsmSharp.Streams.OsmEnumerableStreamSource.Current">
+            <summary>
+            Returns the current object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmEnumerableStreamSource.Reset">
+            <summary>
+            Resets this data source.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.OsmEnumerableStreamSource.CanReset">
+            <summary>
+            Returns true, this source can be reset.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.OsmStreamSource">
+            <summary>
+            An abstract representation of an OSM source stream.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSource.#ctor">
+            <summary>
+            Creates a new source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSource.MoveNext">
+            <summary>
+            Move to the next item in the stream.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSource.MoveNextNode">
+            <summary>
+            Move to the next node.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSource.MoveNextWay">
+            <summary>
+            Move to the next way.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSource.MoveNextRelation">
+            <summary>
+            Move to the next relation.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSource.MoveNext(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Move to the next item in the stream.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSource.Current">
+            <summary>
+            Returns the current item in the stream.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSource.Reset">
+            <summary>
+            Resets the source to the beginning.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.OsmStreamSource.CanReset">
+            <summary>
+            Returns true if this source can be reset.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:OsmSharp.Streams.OsmStreamSource.IsSorted">
+            <summary>
+            Returns true if this source never returns a way or relation before an node or a relation before a way.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.OsmStreamSource.Meta">
+            <summary>
+            Gets the meta-data.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSource.GetAllMeta">
+            <summary>
+            Gets all meta-data from all sources and filters that provide this source of data.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSource.GetEnumerator">
+            <summary>
+            Returns the enumerator for this enumerable.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSource.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns the enumerator for this enumerable.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:OsmSharp.Streams.OsmStreamSource.System#Collections#Generic#IEnumerator{OsmSharp#OsmGeo}#Current">
+            <summary>
+            Returns the current object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSource.Dispose">
+            <summary>
+            Disposes all resources associated with this source.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.OsmStreamSource.System#Collections#IEnumerator#Current">
+            <summary>
+            Returns the current object.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.OsmStreamSourceEmpty">
+            <summary>
+            An empty stream reader.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSourceEmpty.MoveNext(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Move to the next item in the stream.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSourceEmpty.Current">
+            <summary>
+            Returns the current object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamSourceEmpty.Reset">
+            <summary>
+            Resets this source.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.OsmStreamSourceEmpty.CanReset">
+            <summary>
+            Returns true if this source can be reset.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.OsmStreamTarget">
+            <summary>
+            Any target of osm data (Nodes, Ways and Relations).
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.#ctor">
+            <summary>
+            Creates a new target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.Initialize">
+            <summary>
+            Initializes the target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.AddNode(OsmSharp.Node)">
+            <summary>
+            Adds a node to the target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.AddWay(OsmSharp.Way)">
+            <summary>
+            Adds a way to the target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.AddRelation(OsmSharp.Relation)">
+            <summary>
+            Adds a relation to the target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.RegisterSource(OsmSharp.Streams.OsmStreamSource)">
+            <summary>
+            Registers a reader on this writer.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.OsmStreamTarget.Source">
+            <summary>
+            Returns the registered reader.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.Pull">
+            <summary>
+            Pulls the changes from the source to this target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.PullNext">
+            <summary>
+            Pulls the next object and returns true if there was one.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.DoPull">
+            <summary>
+            Does the pull operation until source is exhausted.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.DoPull(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Does the pull operation until source is exhausted.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.OnBeforePull">
+            <summary>
+            Called right before pull and right after initialization.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.OnAfterPull">
+            <summary>
+            Called right after pull and right before flush.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.OsmStreamTarget.Meta">
+            <summary>
+            Gets the meta-data.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.GetAllMeta">
+            <summary>
+            Gets all meta-data from all sources and filters that provide this target of data.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.Close">
+            <summary>
+            Closes the current target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTarget.Flush">
+            <summary>
+            Flushes the current target.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.IOsmStreamTarget">
+            <summary>
+            Abstract representation of a stream target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.IOsmStreamTarget.RegisterSource(OsmSharp.Streams.OsmStreamSource)">
+            <summary>
+            Registers the given source.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.OsmStreamTargetEmpty">
+            <summary>
+            An empty OSM stream writer doing nothing with objects being streamed to it.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTargetEmpty.Initialize">
+            <summary>
+            Initializes this target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTargetEmpty.AddNode(OsmSharp.Node)">
+            <summary>
+            Adds a node.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTargetEmpty.AddWay(OsmSharp.Way)">
+            <summary>
+            Adds a way.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.OsmStreamTargetEmpty.AddRelation(OsmSharp.Relation)">
+            <summary>
+            Adds a relation.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.XmlOsmStreamSource">
+            <summary>
+            A stream source that reads OSM-XML.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.XmlOsmStreamSource.#ctor(System.IO.Stream)">
+            <summary>
+            Creates a new OSM XML processor source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.XmlOsmStreamSource.Initialize">
+            <summary>
+            Initializes this source.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.XmlOsmStreamSource.Reset">
+            <summary>
+            Resets this source.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Streams.XmlOsmStreamSource.CanReset">
+            <summary>
+            Returns true if this source can be reset.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.XmlOsmStreamSource.MoveNext(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Move to the next item in the stream.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.XmlOsmStreamSource.Current">
+            <summary>
+            Returns the current object.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.XmlOsmStreamSource.Dispose">
+            <summary>
+            Disposes all resources associated with this stream.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Streams.XmlOsmStreamTarget">
+            <summary>
+            A stream target that writes OSM-XML.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.XmlOsmStreamTarget.#ctor(System.IO.Stream)">
+            <summary>
+            Creates a new stream target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.XmlOsmStreamTarget.Initialize">
+            <summary>
+            Initializes this target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.XmlOsmStreamTarget.AddNode(OsmSharp.Node)">
+            <summary>
+            Adds a node to the xml output stream.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.XmlOsmStreamTarget.AddWay(OsmSharp.Way)">
+            <summary>
+            Adds a way to this target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.XmlOsmStreamTarget.AddRelation(OsmSharp.Relation)">
+            <summary>
+            Adds a relation to this target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.XmlOsmStreamTarget.Close">
+            <summary>
+            Closes this target.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Streams.XmlOsmStreamTarget.Dispose">
+            <summary>
+            Disposes of all resource associated with this stream target.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Relation">
+            <summary>
+            Represents a relation.
+            </summary>
+            <summary>
+            Represents a relation.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Relation.#ctor">
+            <summary>
+            Creates new relation.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Relation.Members">
+            <summary>
+            The relation members.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Relation.ToString">
+            <summary>
+            Returns a description of this object.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.RelationMember">
+            <summary>
+            Represents a relation member.
+            </summary>
+            <summary>
+            Represents a relation member.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.RelationMember.#ctor">
+            <summary>
+            Creates a new relation member.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.RelationMember.#ctor(System.Int64,System.String,OsmSharp.OsmGeoType)">
+            <summary>
+            Creates a new relation member.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.RelationMember.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.RelationMember.Id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.RelationMember.Role">
+            <summary>
+            Gets or sets the role.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Way">
+            <summary>
+            Represents a way.
+            </summary>
+            <summary>
+            Represents a way.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Way.#ctor">
+            <summary>
+            Creates a new simple way.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Way.Nodes">
+            <summary>
+            Gets or sets the nodes.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Way.ToString">
+            <summary>
+            Returns a description of this object.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Logging.Logger">
+            <summary>
+            A logger.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Logging.Logger.#ctor(System.String)">
+            <summary>
+            Creates a new logger.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Logging.Logger.Create(System.String)">
+            <summary>
+            Creates a new logger.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Logging.Logger.Log(OsmSharp.Logging.TraceEventType,System.String,System.Object[])">
+            <summary>
+            Logs a message.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Logging.Logger.Log(System.String,OsmSharp.Logging.TraceEventType,System.String,System.Object[])">
+            <summary>
+            Logs a message.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Logging.Logger.LogActionFunction">
+            <summary>
+            Defines the log action function.
+            </summary>
+            <param name="origin">The origin of the message, a class or module name.</param>
+            <param name="level">The level of the message, 'critical', 'error', 'warning', 'verbose' or 'information'.</param>
+            <param name="message">The message content.</param>
+            <param name="parameters">Any parameters that may be useful.</param>
+        </member>
+        <member name="P:OsmSharp.Logging.Logger.LogAction">
+            <summary>
+            Gets or sets the action to actually log a message.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Logging.TraceEventType">
+            <summary>
+            Represents different types of trace events.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Logging.TraceEventType.Critical">
+            <summary>
+            Critical.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Logging.TraceEventType.Error">
+            <summary>
+            Error.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Logging.TraceEventType.Warning">
+            <summary>
+            Warning.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Logging.TraceEventType.Verbose">
+            <summary>
+            Verbose.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.Logging.TraceEventType.Information">
+            <summary>
+            Information.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.OsmGeo">
+            <summary>
+            Primive used as a base class for any osm object that has a meaning on the map (Nodes, Ways and Relations).
+            </summary>
+        </member>
+        <member name="P:OsmSharp.OsmGeo.Id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.OsmGeo.Type">
+            <summary>
+            Gets the OsmGeo-type.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.OsmGeo.Tags">
+            <summary>
+            Gets or sets the tags.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.OsmGeo.ChangeSetId">
+            <summary>
+            Gets or sets the changeset id.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.OsmGeo.Visible">
+            <summary>
+            Gets or sets the visible flag.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.OsmGeo.TimeStamp">
+            <summary>
+            Gets or sets the timestamp.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.OsmGeo.Version">
+            <summary>
+            Gets or sets the version.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.OsmGeo.UserId">
+            <summary>
+            Gets or sets the userid.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.OsmGeo.UserName">
+            <summary>
+            Gets or sets the username.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.OsmGeoType">
+            <summary>
+            Represents a type of Geo OSM object.
+            </summary>
+        </member>
+        <member name="F:OsmSharp.OsmGeoType.Node">
+            <summary>
+            Node
+            </summary>
+        </member>
+        <member name="F:OsmSharp.OsmGeoType.Way">
+            <summary>
+            Way
+            </summary>
+        </member>
+        <member name="F:OsmSharp.OsmGeoType.Relation">
+            <summary>
+            Relation
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Tags.Tag">
+            <summary>
+            Represents an OSM-tag.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.Tag.#ctor(System.String,System.String)">
+            <summary>
+            Creates a new tag.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Tags.Tag.Key">
+            <summary>
+            Gets or sets the key.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Tags.Tag.Value">
+            <summary>
+             Gets or sets the value.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Tags.TagExtensions">
+            <summary>
+            Contains extensions related to tags.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagExtensions.IsFalse(OsmSharp.Tags.TagsCollectionBase,System.String)">
+            <summary>
+            Returns true if the given key has a value that means false.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagExtensions.IsTrue(OsmSharp.Tags.TagsCollectionBase,System.String)">
+            <summary>
+            Returns true if the given key has a value that means true.
+            </summary>
+        </member>
+        <member name="T:OsmSharp.Tags.TagsCollection">
+            <summary>
+            A tags collection.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollection.#ctor">
+            <summary>
+            Creates a new tags collection.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollection.#ctor(System.Int32)">
+            <summary>
+            Creates a new tags collection.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollection.#ctor(OsmSharp.Tags.Tag[])">
+            <summary>
+            Creates a new tags collection.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollection.#ctor(System.Collections.Generic.IEnumerable{OsmSharp.Tags.Tag})">
+            <summary>
+            Creates a new tags collection.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollection.#ctor(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Creates a new tags collection.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Tags.TagsCollection.Count">
+            <summary>
+            Returns the number of tags in this collection.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Tags.TagsCollection.IsReadonly">
+            <summary>
+            Returns true if this collection is readonly.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollection.AddOrReplace(OsmSharp.Tags.Tag)">
+            <summary>
+            Adds or replaces a tag.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollection.Clear">
+            <summary>
+            Clears all tags.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollection.RemoveKey(System.String)">
+            <summary>
+            Removes the tag with the given key.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollection.TryGetValue(System.String,System.String@)">
+            <summary>
+            Gets the value for the given key and returns true if the given key exists.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollection.GetEnumerator">
+            <summary>
+            Gets the enumerator.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OsmSharp.Tags.TagsCollectionBase">
+            <summary>
+            Abstract representation of a tags collection.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Tags.TagsCollectionBase.Count">
+            <summary>
+            Returns the number of tags in this collection.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Tags.TagsCollectionBase.IsReadonly">
+            <summary>
+            Returns true if this collection is readonly.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.Add(OsmSharp.Tags.Tag)">
+            <summary>
+            Adds a tag.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.Add(System.String,System.String)">
+            <summary>
+            Adds a tag.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.AddOrReplace(OsmSharp.Tags.Tag)">
+            <summary>
+            Adds or replaces a tag.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.AddOrReplace(System.String,System.String)">
+            <summary>
+            Adds or replaces a tag.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.AddOrReplace(System.Collections.Generic.IEnumerable{OsmSharp.Tags.Tag})">
+            <summary>
+            Adds or replaces all tags.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.ContainsKey(System.String)">
+            <summary>
+            Returns true if the given tag exists.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.Contains(OsmSharp.Tags.Tag)">
+            <summary>
+            Returns true if the given tag exists.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.Contains(System.String,System.String)">
+            <summary>
+            Returns true if the given tag exists.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.TryGetValue(System.String,System.String@)">
+            <summary>
+            Gets the value for the given key and returns true if the given key exists.
+            </summary>
+        </member>
+        <member name="P:OsmSharp.Tags.TagsCollectionBase.Item(System.String)">
+            <summary>
+            Returns the value associated with the given key.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.RemoveKey(System.String)">
+            <summary>
+            Removes all tags with the given key.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.RemoveKeyValue(OsmSharp.Tags.Tag)">
+            <summary>
+            Removes the given tag.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.Clear">
+            <summary>
+            Clears all tags.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.RemoveAll(System.Predicate{OsmSharp.Tags.Tag})">
+            <summary>
+            Removes all tags that match the given criteria.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.Trim">
+            <summary>
+            Trims the internal data structures to their minimum size.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.GetEnumerator">
+            <summary>
+            Returns the enumerator for this enumerable.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns the enumerator for this enumerable.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.Equals(System.Object)">
+            <summary>
+            Returns true if the given object represent the same information.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Tags.TagsCollectionBase.GetHashCode">
+            <summary>
+            Serves as a hash function.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OsmSharp.Utilities">
+            <summary>
+            Contains general utilities.
+            </summary>
+        </member>
+        <member name="M:OsmSharp.Utilities.IsInside(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Returns true if the given coordinate is inside the box.
+            </summary>
+        </member>
+    </members>
+</doc>
